@@ -19,6 +19,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Papperskorg"
         setupTableView()
         presenter.fetchAllDocumentsFromBackend()
     }
