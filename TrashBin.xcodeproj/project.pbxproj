@@ -21,6 +21,7 @@
 		632FDC1B276503E000901083 /* BackendCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDC1A276503E000901083 /* BackendCallback.swift */; };
 		632FDC1D2765049100901083 /* DocumentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDC1C2765049100901083 /* DocumentModel.swift */; };
 		632FDC1F276504DA00901083 /* ReceiptModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDC1E276504DA00901083 /* ReceiptModel.swift */; };
+		632FDC23276505E000901083 /* DocumentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDC22276505E000901083 /* DocumentsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		632FDC1A276503E000901083 /* BackendCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendCallback.swift; sourceTree = "<group>"; };
 		632FDC1C2765049100901083 /* DocumentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentModel.swift; sourceTree = "<group>"; };
 		632FDC1E276504DA00901083 /* ReceiptModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptModel.swift; sourceTree = "<group>"; };
+		632FDC22276505E000901083 /* DocumentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,8 +140,8 @@
 		632FDC112764AFF800901083 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				632FDC1C2765049100901083 /* DocumentModel.swift */,
-				632FDC1E276504DA00901083 /* ReceiptModel.swift */,
+				632FDC21276505B100901083 /* Api */,
+				632FDC20276505AA00901083 /* View */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -161,6 +163,23 @@
 				632FDC1A276503E000901083 /* BackendCallback.swift */,
 			);
 			path = Backend;
+			sourceTree = "<group>";
+		};
+		632FDC20276505AA00901083 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				632FDC22276505E000901083 /* DocumentsViewModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		632FDC21276505B100901083 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				632FDC1C2765049100901083 /* DocumentModel.swift */,
+				632FDC1E276504DA00901083 /* ReceiptModel.swift */,
+			);
+			path = Api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +257,7 @@
 				632FDBF62764AC1700901083 /* ViewController.swift in Sources */,
 				632FDC1D2765049100901083 /* DocumentModel.swift in Sources */,
 				632FDC092764AD9400901083 /* OverviewPresenter.swift in Sources */,
+				632FDC23276505E000901083 /* DocumentsViewModel.swift in Sources */,
 				632FDC0E2764AF8200901083 /* SelectedReceiptVC.swift in Sources */,
 				632FDC192765036000901083 /* BackendService.swift in Sources */,
 				632FDBF22764AC1700901083 /* AppDelegate.swift in Sources */,
