@@ -78,7 +78,7 @@ class DocumentCell: UITableViewCell {
         cell.sender.text = item.sender
         if let date = item.date {
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "MMM dd, yyyy"
+            dateFormatter.dateFormat = "yyyy-MM-dd"
             cell.date.text = "\(dateFormatter.string(from: date))"
         }
         return cell
