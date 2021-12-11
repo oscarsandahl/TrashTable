@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+        presenter.fetchAllDocumentsFromBackend()
     }
 
     func setupTableView() {
@@ -45,11 +46,24 @@ extension ViewController: UITableViewDelegate {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let item = presenter.documents[indexPath.row]
+        
+        switch item.fileType {
+        case .document:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: DocumentCell.cellIdentifier, for: indexPath) as? DocumentCell {
+                return cell.addValues(cell: cell, item: item)
+            }
+        case .receipt:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: ReceiptCell.cellIdentifier, for: indexPath) as? ReceiptCell {
+                return cell.addValues(cell: cell, item: item)
+            }
+        }
+        
         return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return presenter.documents.count
     }
     
 }
