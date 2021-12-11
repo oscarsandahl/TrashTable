@@ -24,6 +24,7 @@
 		632FDC23276505E000901083 /* DocumentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDC22276505E000901083 /* DocumentsViewModel.swift */; };
 		632FDC2627650F8800901083 /* DocumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDC2527650F8700901083 /* DocumentCell.swift */; };
 		632FDC2827650FA100901083 /* ReceiptCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDC2727650FA100901083 /* ReceiptCell.swift */; };
+		632FDC2B27653AB000901083 /* UIActivityIndicatorViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDC2A27653AB000901083 /* UIActivityIndicatorViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		632FDC22276505E000901083 /* DocumentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsViewModel.swift; sourceTree = "<group>"; };
 		632FDC2527650F8700901083 /* DocumentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCell.swift; sourceTree = "<group>"; };
 		632FDC2727650FA100901083 /* ReceiptCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptCell.swift; sourceTree = "<group>"; };
+		632FDC2A27653AB000901083 /* UIActivityIndicatorViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		632FDC052764AD1A00901083 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				632FDC2927653A9700901083 /* Extensions */,
 				632FDC0C2764AF6D00901083 /* SelectedReceipt */,
 				632FDC072764AD3200901083 /* SelectedDocument */,
 				632FDC062764AD2800901083 /* Overview */,
@@ -196,6 +199,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		632FDC2927653A9700901083 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				632FDC2A27653AB000901083 /* UIActivityIndicatorViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -271,6 +282,7 @@
 				632FDC2627650F8800901083 /* DocumentCell.swift in Sources */,
 				632FDBF62764AC1700901083 /* ViewController.swift in Sources */,
 				632FDC1D2765049100901083 /* DocumentModel.swift in Sources */,
+				632FDC2B27653AB000901083 /* UIActivityIndicatorViewExtension.swift in Sources */,
 				632FDC092764AD9400901083 /* OverviewPresenter.swift in Sources */,
 				632FDC23276505E000901083 /* DocumentsViewModel.swift in Sources */,
 				632FDC0E2764AF8200901083 /* SelectedReceiptVC.swift in Sources */,

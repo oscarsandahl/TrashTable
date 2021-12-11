@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     var presenter: OverviewPresenter!
     let tableView: UITableView = UITableView()
+    let activityIndicatior: UIActivityIndicatorView = UIActivityIndicatorView()
     
     class func initViewController() -> UIViewController {
         let viewController = ViewController()
@@ -21,6 +22,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.title = "Papperskorg"
         setupTableView()
+        setupActivityIndicator()
         presenter.fetchAllDocumentsFromBackend()
     }
 
@@ -37,6 +39,12 @@ class ViewController: UIViewController {
         tableView.delegate = self
     }
 
+    func setupActivityIndicator() {
+        view.addSubview(activityIndicatior)
+        activityIndicatior.translatesAutoresizingMaskIntoConstraints = false
+        activityIndicatior.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        activityIndicatior.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+    }
 }
 
 extension ViewController: UITableViewDelegate {
