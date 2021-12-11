@@ -18,6 +18,7 @@ class OverviewPresenter {
     func fetchAllDocumentsFromBackend() {
         fetchDocumentsFromBackend()
         fetchReceiptFromBackend()
+        sortItemsByDateAscending()
         view?.tableView.reloadData()
     }
     
@@ -41,5 +42,11 @@ class OverviewPresenter {
                 print("Show error alert here")
             }
         }
+    }
+    
+    func sortItemsByDateAscending() {
+        var sortedArray: [DocumentsViewModel] = []
+        sortedArray = documents.sorted(by: { $0.date?.compare($1.date ?? .distantFuture) == .orderedAscending })
+        documents = sortedArray
     }
 }
