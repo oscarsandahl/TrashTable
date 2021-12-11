@@ -21,7 +21,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupTableView()
         presenter.fetchAllDocumentsFromBackend()
-         
     }
 
     func setupTableView() {
