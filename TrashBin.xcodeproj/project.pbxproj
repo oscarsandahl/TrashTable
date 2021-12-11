@@ -25,6 +25,7 @@
 		632FDC2627650F8800901083 /* DocumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDC2527650F8700901083 /* DocumentCell.swift */; };
 		632FDC2827650FA100901083 /* ReceiptCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDC2727650FA100901083 /* ReceiptCell.swift */; };
 		632FDC2B27653AB000901083 /* UIActivityIndicatorViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDC2A27653AB000901083 /* UIActivityIndicatorViewExtension.swift */; };
+		632FDC2D27653F3900901083 /* TableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDC2C27653F3900901083 /* TableSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		632FDC2527650F8700901083 /* DocumentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCell.swift; sourceTree = "<group>"; };
 		632FDC2727650FA100901083 /* ReceiptCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptCell.swift; sourceTree = "<group>"; };
 		632FDC2A27653AB000901083 /* UIActivityIndicatorViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorViewExtension.swift; sourceTree = "<group>"; };
+		632FDC2C27653F3900901083 /* TableSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				632FDC22276505E000901083 /* DocumentsViewModel.swift */,
+				632FDC2C27653F3900901083 /* TableSection.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				632FDC2827650FA100901083 /* ReceiptCell.swift in Sources */,
 				632FDBF22764AC1700901083 /* AppDelegate.swift in Sources */,
 				632FDC1B276503E000901083 /* BackendCallback.swift in Sources */,
+				632FDC2D27653F3900901083 /* TableSection.swift in Sources */,
 				632FDC0B2764AF4100901083 /* SelectedDocumentVC.swift in Sources */,
 				632FDC1F276504DA00901083 /* ReceiptModel.swift in Sources */,
 				632FDBF42764AC1700901083 /* SceneDelegate.swift in Sources */,
