@@ -18,6 +18,7 @@ class OverviewPresenter {
     func fetchAllDocumentsFromBackend() {
         fetchDocumentsFromBackend()
         fetchReceiptFromBackend()
+        view?.tableView.reloadData()
     }
     
     func fetchDocumentsFromBackend() {
