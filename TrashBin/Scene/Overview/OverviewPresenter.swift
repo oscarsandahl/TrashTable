@@ -16,10 +16,14 @@ class OverviewPresenter {
     }
     
     func fetchAllDocumentsFromBackend() {
-        fetchDocumentsFromBackend()
-        fetchReceiptFromBackend()
-        sortItemsByDateAscending()
-        view?.tableView.reloadData()
+        view?.activityIndicatior.showSpinner(isLoading: true)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+            self.fetchDocumentsFromBackend()
+            self.fetchReceiptFromBackend()
+            self.sortItemsByDateAscending()
+            self.view?.activityIndicatior.showSpinner(isLoading: false)
+            self.view?.tableView.reloadData()
+        }
     }
     
     func fetchDocumentsFromBackend() {
