@@ -48,14 +48,30 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 40))
+        view.backgroundColor =  .systemGray6
+        
+        let tableHeaderLabel = UILabel(frame: CGRect(x: 10, y: -5, width: view.frame.width, height: 40))
+        tableHeaderLabel.font = UIFont.systemFont(ofSize: 20)
+        tableHeaderLabel.text = "\(DateFormatter().monthSymbols[presenter.tableContent[section].month - 1])"
+        view.addSubview(tableHeaderLabel)
+        
+        return view
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }
 }
 
 extension ViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return presenter.tableContent.count
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let item = presenter.documents[indexPath.row]
+        let item = presenter.tableContent[indexPath.section].documents[indexPath.row]
         
         switch item.fileType {
         case .document:
@@ -72,11 +88,11 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presenter.documents.count
+        return presenter.tableContent[section].documents.count
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch presenter.documents[indexPath.row].fileType {
+        switch presenter.tableContent[indexPath.section].documents[indexPath.row].fileType {
         case .document:
             let viewController = SelectedDocumentVC()
             navigationController?.pushViewController(viewController, animated: true)

@@ -9,7 +9,8 @@ import Foundation
 
 class OverviewPresenter {
     weak var view: ViewController?
-    var documents: [DocumentsViewModel] = []
+    var tableContent: [TableSection] = []
+    private var documents: [DocumentsViewModel] = []
     
     init(_ view: ViewController) {
         self.view = view
@@ -21,6 +22,7 @@ class OverviewPresenter {
             self.fetchDocumentsFromBackend()
             self.fetchReceiptFromBackend()
             self.sortItemsByDateAscending()
+            self.sortMonths()
             self.view?.activityIndicatior.showSpinner(isLoading: false)
             self.view?.tableView.reloadData()
         }
@@ -52,5 +54,33 @@ class OverviewPresenter {
         var sortedArray: [DocumentsViewModel] = []
         sortedArray = documents.sorted(by: { $0.date?.compare($1.date ?? .distantFuture) == .orderedAscending })
         documents = sortedArray
+    }
+    
+    func sortMonths() {
+        var monthsArray: [Int] = []
+        documents.forEach { document in
+            if let date = document.date {
+                let calenderDate = Calendar.current.dateComponents([.month], from: date)
+                if let month = calenderDate.month {
+                    monthsArray.append(month)
+                }
+            }
+        }
+
+        monthsArray = monthsArray.removingDuplicates()
+        monthsArray.forEach { month in
+            tableContent.append(TableSection(month: month, documents: []))
+        }
+        
+        documents.forEach { document in
+            if let date = document.date {
+                let calenderMonth = Calendar.current.dateComponents([.month], from: date)
+                if let month = calenderMonth.month {
+                    if let index = tableContent.enumerated().first(where: {$0.element.month == month}) {
+                        tableContent[index.offset].documents.append(document)
+                    }
+                }
+            }
+        }
     }
 }

@@ -26,6 +26,7 @@
 		632FDC2827650FA100901083 /* ReceiptCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDC2727650FA100901083 /* ReceiptCell.swift */; };
 		632FDC2B27653AB000901083 /* UIActivityIndicatorViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDC2A27653AB000901083 /* UIActivityIndicatorViewExtension.swift */; };
 		632FDC2D27653F3900901083 /* TableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDC2C27653F3900901083 /* TableSection.swift */; };
+		632FDC2F276541BD00901083 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDC2E276541BD00901083 /* ArrayExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		632FDC2727650FA100901083 /* ReceiptCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptCell.swift; sourceTree = "<group>"; };
 		632FDC2A27653AB000901083 /* UIActivityIndicatorViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorViewExtension.swift; sourceTree = "<group>"; };
 		632FDC2C27653F3900901083 /* TableSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSection.swift; sourceTree = "<group>"; };
+		632FDC2E276541BD00901083 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				632FDC2A27653AB000901083 /* UIActivityIndicatorViewExtension.swift */,
+				632FDC2E276541BD00901083 /* ArrayExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				632FDC2827650FA100901083 /* ReceiptCell.swift in Sources */,
 				632FDBF22764AC1700901083 /* AppDelegate.swift in Sources */,
 				632FDC1B276503E000901083 /* BackendCallback.swift in Sources */,
+				632FDC2F276541BD00901083 /* ArrayExtension.swift in Sources */,
 				632FDC2D27653F3900901083 /* TableSection.swift in Sources */,
 				632FDC0B2764AF4100901083 /* SelectedDocumentVC.swift in Sources */,
 				632FDC1F276504DA00901083 /* ReceiptModel.swift in Sources */,
