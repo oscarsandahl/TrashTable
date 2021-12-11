@@ -22,6 +22,8 @@
 		632FDC1D2765049100901083 /* DocumentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDC1C2765049100901083 /* DocumentModel.swift */; };
 		632FDC1F276504DA00901083 /* ReceiptModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDC1E276504DA00901083 /* ReceiptModel.swift */; };
 		632FDC23276505E000901083 /* DocumentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDC22276505E000901083 /* DocumentsViewModel.swift */; };
+		632FDC2627650F8800901083 /* DocumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDC2527650F8700901083 /* DocumentCell.swift */; };
+		632FDC2827650FA100901083 /* ReceiptCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDC2727650FA100901083 /* ReceiptCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		632FDC1C2765049100901083 /* DocumentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentModel.swift; sourceTree = "<group>"; };
 		632FDC1E276504DA00901083 /* ReceiptModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptModel.swift; sourceTree = "<group>"; };
 		632FDC22276505E000901083 /* DocumentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsViewModel.swift; sourceTree = "<group>"; };
+		632FDC2527650F8700901083 /* DocumentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCell.swift; sourceTree = "<group>"; };
+		632FDC2727650FA100901083 /* ReceiptCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		632FDC062764AD2800901083 /* Overview */ = {
 			isa = PBXGroup;
 			children = (
+				632FDC2427650F5600901083 /* Cell */,
 				632FDBF52764AC1700901083 /* ViewController.swift */,
 				632FDC082764AD9400901083 /* OverviewPresenter.swift */,
 			);
@@ -182,6 +187,15 @@
 			path = Api;
 			sourceTree = "<group>";
 		};
+		632FDC2427650F5600901083 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				632FDC2527650F8700901083 /* DocumentCell.swift */,
+				632FDC2727650FA100901083 /* ReceiptCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -254,12 +268,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				632FDC2627650F8800901083 /* DocumentCell.swift in Sources */,
 				632FDBF62764AC1700901083 /* ViewController.swift in Sources */,
 				632FDC1D2765049100901083 /* DocumentModel.swift in Sources */,
 				632FDC092764AD9400901083 /* OverviewPresenter.swift in Sources */,
 				632FDC23276505E000901083 /* DocumentsViewModel.swift in Sources */,
 				632FDC0E2764AF8200901083 /* SelectedReceiptVC.swift in Sources */,
 				632FDC192765036000901083 /* BackendService.swift in Sources */,
+				632FDC2827650FA100901083 /* ReceiptCell.swift in Sources */,
 				632FDBF22764AC1700901083 /* AppDelegate.swift in Sources */,
 				632FDC1B276503E000901083 /* BackendCallback.swift in Sources */,
 				632FDC0B2764AF4100901083 /* SelectedDocumentVC.swift in Sources */,
