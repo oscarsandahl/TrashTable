@@ -19,6 +19,8 @@
 		632FDC172765033D00901083 /* Documents.json in Resources */ = {isa = PBXBuildFile; fileRef = 632FDC152765033D00901083 /* Documents.json */; };
 		632FDC192765036000901083 /* BackendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDC182765036000901083 /* BackendService.swift */; };
 		632FDC1B276503E000901083 /* BackendCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDC1A276503E000901083 /* BackendCallback.swift */; };
+		632FDC1D2765049100901083 /* DocumentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDC1C2765049100901083 /* DocumentModel.swift */; };
+		632FDC1F276504DA00901083 /* ReceiptModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDC1E276504DA00901083 /* ReceiptModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		632FDC152765033D00901083 /* Documents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Documents.json; sourceTree = "<group>"; };
 		632FDC182765036000901083 /* BackendService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendService.swift; sourceTree = "<group>"; };
 		632FDC1A276503E000901083 /* BackendCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendCallback.swift; sourceTree = "<group>"; };
+		632FDC1C2765049100901083 /* DocumentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentModel.swift; sourceTree = "<group>"; };
+		632FDC1E276504DA00901083 /* ReceiptModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,8 @@
 		632FDC112764AFF800901083 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				632FDC1C2765049100901083 /* DocumentModel.swift */,
+				632FDC1E276504DA00901083 /* ReceiptModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -230,12 +236,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				632FDBF62764AC1700901083 /* ViewController.swift in Sources */,
+				632FDC1D2765049100901083 /* DocumentModel.swift in Sources */,
 				632FDC092764AD9400901083 /* OverviewPresenter.swift in Sources */,
 				632FDC0E2764AF8200901083 /* SelectedReceiptVC.swift in Sources */,
 				632FDC192765036000901083 /* BackendService.swift in Sources */,
 				632FDBF22764AC1700901083 /* AppDelegate.swift in Sources */,
 				632FDC1B276503E000901083 /* BackendCallback.swift in Sources */,
 				632FDC0B2764AF4100901083 /* SelectedDocumentVC.swift in Sources */,
+				632FDC1F276504DA00901083 /* ReceiptModel.swift in Sources */,
 				632FDBF42764AC1700901083 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
