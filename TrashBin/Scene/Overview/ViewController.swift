@@ -66,4 +66,15 @@ extension ViewController: UITableViewDataSource {
         return presenter.documents.count
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch presenter.documents[indexPath.row].fileType {
+        case .document:
+            let viewController = SelectedDocumentVC()
+            navigationController?.pushViewController(viewController, animated: true)
+        case .receipt:
+            let viewController = SelectedReceiptVC()
+            navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
+    
 }
