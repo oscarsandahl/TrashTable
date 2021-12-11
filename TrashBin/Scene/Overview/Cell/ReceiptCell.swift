@@ -30,6 +30,7 @@ class ReceiptCell: UITableViewCell {
         let type = UILabel()
         type.translatesAutoresizingMaskIntoConstraints = false
         type.text = "RETUR"
+        type.font = UIFont.boldSystemFont(ofSize: 12.0)
         type.isHidden = true
         type.backgroundColor = .systemYellow
         return type
@@ -38,12 +39,14 @@ class ReceiptCell: UITableViewCell {
     let title: UILabel = {
         let title = UILabel()
         title.translatesAutoresizingMaskIntoConstraints = false
+        title.font = UIFont.systemFont(ofSize: 16.0)
         return title
     }()
     
     let date: UILabel = {
         let date = UILabel()
         date.translatesAutoresizingMaskIntoConstraints = false
+        date.font = UIFont.systemFont(ofSize: 16.0)
         return date
     }()
 

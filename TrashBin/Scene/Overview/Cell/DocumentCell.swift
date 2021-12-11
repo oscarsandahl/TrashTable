@@ -29,18 +29,22 @@ class DocumentCell: UITableViewCell {
     var title: UILabel = {
         let title = UILabel()
         title.translatesAutoresizingMaskIntoConstraints = false
+        title.font = UIFont.boldSystemFont(ofSize: 16.0)
         return title
     }()
     
     var date: UILabel = {
         let date = UILabel()
         date.translatesAutoresizingMaskIntoConstraints = false
+        date.font = UIFont.systemFont(ofSize: 16.0)
         return date
     }()
     
     let sender: UILabel = {
         let sender = UILabel()
         sender.translatesAutoresizingMaskIntoConstraints = false
+        sender.font = UIFont.systemFont(ofSize: 14.0)
+        sender.textColor = .systemGray
         return sender
     }()
     
